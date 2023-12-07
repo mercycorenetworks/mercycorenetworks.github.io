@@ -22,17 +22,18 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Apply hover effect to each individual link */
 nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 5px 10px; /* Add padding to make the hover effect more noticeable */
+    transition: background-color 0.3s ease; /* Adding transition for smooth effect */
 }
 
-/* Hero Section Styles */
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #f0f0f0;
+/* Apply hover effect to each individual link */
+nav a:hover {
+    background-color: #555; /* Change to your desired hover background color */
 }
 
 /* About Section Styles */
