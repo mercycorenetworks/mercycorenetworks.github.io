@@ -3,6 +3,47 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    color: #333;
+}
+
+
+section, footer {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-bottom: 60px;
 }
 
 /* Navigation Styles */
@@ -22,18 +63,18 @@ nav ul li {
     margin-right: 20px;
 }
 
-/* Apply hover effect to each individual link */
 nav a {
     text-decoration: none;
-    color: white;
+    color: #007BFF;
     font-weight: bold;
-    padding: 5px 10px; /* Add padding to make the hover effect more noticeable */
-    transition: background-color 0.3s ease; /* Adding transition for smooth effect */
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Apply hover effect to each individual link */
 nav a:hover {
-    background-color: #555; /* Change to your desired hover background color */
+    background-color: #0056b3;
+    color: white;
 }
 
 /* About Section Styles */
@@ -55,6 +96,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 0;
 }
-
-/* Responsive Styles - Add as needed */
