@@ -8,7 +8,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <style>
     section{
-        padding: 60px 0;
+        padding: 40px 0;
+    }
+
+    #intro {
+        position: relative;
+    }
+
+    .dark-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72));
+    }
+
+    .intro-text {
+        position: relative;
+        z-index: 1;
     }
   </style>
     <!-- Include FontAwesome for icons -->
@@ -21,7 +39,8 @@
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold">
-                    <i class="bi bi-laptop"></i>
+                    <!-- Custom Icon -->
+                    <img src="/assets/MercyCore_Networks_Logo_Trans.png" alt="Custom Icon" style="height: 2rem; width: 2rem;">
                     MercyCore Networks
                 </span>
             </a>
@@ -33,17 +52,17 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#prices" class="nav-link">Prices</a>
+                        <a href="#pricing" class="nav-link">Prices</a>
                     </li>
                     <li class="nav-item">
                         <a href="#reviews" class="nav-link">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About Us</a>
-                    </li>
+                    </li>                
                     <li class="nav-item d-md-none">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
@@ -56,138 +75,418 @@
     </nav>
 
 
-    <!--main image & intro text-->
-    <section id="intro">
+   <!--main image & intro text-->
+    <section id="intro" style="background: url('/assets/Cover_Pic.jpg') center/cover; position: relative;">
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
+                <div class="col-md-5 text-center text-md-start text-white">
+                    <h1 class="intro-text">
                         <div class="display-5">Welcome to MercyCore Networks</div>
                         <div class="h3 text-muted">Transforming Connectivity, Ensuring Security</div>
                     </h1>
-                    <p class="lead my-4 text-mute">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                     <!--Tooltip-->
-                    <span class="tt" data-bootstrap-placement="bottom" title="MercyCore Networks Logo">
-                        <img class="img-fluid" src="/assets/MercyCore Networks.png" alt="">
-                    </span>                  
+                    <span class="tt" data-bootstrap-placement="bottom" title="IT Quote">
+                        <img class="img-fluid rounded-3 shadow-lg intro-text" src="/assets/IT Quote.png" alt="IT Quote" style="width: 70%;">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="dark-overlay"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about" style="background: url('/assets/group.jpg') center/cover; position: relative;">
+        <div class="container intro-text text-light">
+            <h2 class="text-center mb-5">About Us</h2>
+            <!-- Brief Introduction about the Company -->
+            <h3>Introduction</h3>
+            <p>
+                Welcome to MercyCore Networks, your gateway to innovative web design, software development, and comprehensive IT services and security solutions for modern businesses. At MercyCore Networks, we are more than just a technology company; we are a dynamic and newly established force in the industry, committed to transforming businesses through cutting-edge digital solutions. Our dedicated team, led by founder Nathan Dwashu, brings a fresh approach to the world of IT, blending creativity, expertise, and a passion for innovation.
+            </p>
+
+            <!-- Our Mission -->
+            <h3>Our Mission</h3>
+            <p>
+                Our mission is clear—to deliver exceptional web design, software development, and IT services with a focus on robust security measures. We understand the evolving needs of modern businesses, and our goal is to provide tailored solutions that not only meet but exceed your expectations.
+            </p>
+
+            <!-- Expertise and Specializations -->
+            <h3>Expertise and Specializations</h3>
+            <p>
+                From crafting visually stunning and user-friendly websites to developing powerful software applications using the latest technologies, we take pride in our diverse skill set. Our expertise extends to Microsoft Azure, Microsoft Office Suite, modern desktop administration, computer hardware replacement, network setup, Security Fundamentals NET, and more.
+            </p>
+
+            <!-- Team Commitment -->
+            <h3>Team Commitment</h3>
+            <p>
+                As a newly established business, we are driven by a shared commitment to excellence. Our team comprises skilled professionals, including an IT technician, administrator, and marketer, all dedicated to delivering remarkable customer service and stringent security measures.
+            </p>
+
+            <!-- Why Choose MercyCore Networks? -->
+            <h3>Why Choose MercyCore Networks?</h3>
+            <ul>
+                <li><strong>Innovation:</strong> We embrace fresh ideas and technologies to stay at the forefront of the industry.</li>
+                <li><strong>Security:</strong> Your digital assets are our priority. We implement robust security measures, including Security Fundamentals NET, to safeguard your systems.</li>
+                <li><strong>Collaboration:</strong> Partner with us, and you'll experience a collaborative approach focused on understanding and meeting your unique business requirements.</li>
+            </ul>
+        </div>
+        <div class="dark-overlay"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services" style="background: url('/assets/technician.jpg') center/cover; position: relative;">
+        <div class="container intro-text text-light">
+            <h2 class="text-center mb-5">Our Services</h2>
+
+            <!-- Business Duties: Web Design -->
+            <div class="service-category">
+                <h3>Web Design</h3>
+                <p>
+                    Our creative designer excels in crafting visually stunning and user-friendly websites that leave a lasting impression. Using the latest web technologies such as HTML5, CSS, and JavaScript, we create bespoke websites that reflect your brand identity and captivate your target audience.
+                </p>
+            </div>
+
+            <!-- Business Duties: Software Development -->
+            <div class="service-category">
+                <h3>Software Development</h3>
+                <p>
+                    We are passionate about transforming ideas into powerful software applications that drive business growth. Our talented developer specializes in the C# programming language, enabling us to create customized software solutions tailored to your specific needs. We are continuously expanding our creative abilities by actively learning and mastering additional programming languages.
+                </p>
+            </div>
+
+            <!-- Business Duties: Microsoft Azure -->
+            <div class="service-category">
+                <h3>Microsoft Azure</h3>
+                <p>
+                    As a forward-thinking Azure professional, our IT Technician can help your business harness the potential of cloud computing. Our expertise in Microsoft Azure allows us to provide expert guidance on leveraging cloud services, migrating your infrastructure seamlessly, and optimizing resources for scalability, security, and cost-efficiency.
+                </p>
+            </div>
+
+            <!-- Business Duties: Microsoft Office Suite -->
+            <div class="service-category">
+                <h3>Microsoft Office Suite</h3>
+                <p>
+                    We possess intermediate-level expertise in Microsoft Word, Excel, PowerPoint, and Microsoft Access, enabling us to support your communication, data analysis, and presentation needs with proficiency and effectiveness. With our support, you can harness the full potential of these tools to enhance collaboration, streamline workflows, and achieve your business objectives.
+                </p>
+            </div>
+
+            <!-- Business Duties: Modern Desktop Administration -->
+            <div class="service-category">
+                <h3>Modern Desktop Administration</h3>
+                <p>
+                    Our skilled professional is adept at modern desktop administration, ensuring your computer systems operate seamlessly and securely. From basic configurations on Windows computers to installing and optimizing operating systems such as Windows 7, 8, 10, or 11, we ensure your technology works efficiently. We provide reliable assistance for upgrading components or replacing outdated parts to ensure optimal performance and compatibility. Our services help your systems stay ahead by ensuring reliable performance and compatibility.
+                </p>
+            </div>
+
+            <!-- Business Duties: IT Support and Security -->
+            <div class="service-category">
+                <h3>IT Support and Security</h3>
+                <p>
+                    Our dedicated team provides comprehensive IT support services, including software installation, antivirus setup, virus scans, automated tasks, and Security Fundamentals NET. We offer both free and premium antivirus packages, guaranteeing robust protection for your systems while maximizing efficiency.
+                </p>
+            </div>
+
+            <!-- Business Duties: Network Setup -->
+            <div class="service-category">
+                <h3>Network Setup</h3>
+                <p>
+                    We specialize in setting up routers, switches, wireless access points, and repeaters to establish robust network environments. With our expertise, you can ensure seamless connectivity, efficient data transmission, and secure network management, empowering your business with a reliable and scalable network infrastructure.
+                </p>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="service-category">
+                <h3>Conclusion</h3>
+                <p>
+                    At MercyCore Networks, we are excited to embark on this journey as a newly established business, bringing you cutting-edge web design, software development, IT services, and security solutions. With our focus on innovation and security, we leverage the latest technologies and trends to provide you with bespoke solutions that propel your business forward while safeguarding your digital assets. Trust us to deliver exceptional results as we strive to make a positive impact on your business's success. Partner with us today, and let's build a brighter future together, fortified by innovation and robust security measures.
+                </p>
+            </div>
+        </div>
+        <div class="dark-overlay"></div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing" style="background: url('/assets/developer.jpg') center/cover; position: relative;">
+        <div class="container intro-text text-light">
+            <h2 class="text-center mb-5">Pricing</h2>
+
+            <!-- Basic Services -->
+            <div class="pricing-category">
+                <h3>Basic Services</h3>
+
+                <!-- IT Support and Security -->
+                <div class="pricing-item">
+                    <h4>IT Support and Security</h4>
+                    <ul>
+                        <li>Antivirus Software Installation: Starting from R300 per workstation</li>
+                        <li>Microsoft 365 Renewal (Already Have Product Key): R450</li>
+                        <li>Microsoft 365 Installation (New Installation or Key Not Available): R600</li>
+                        <li>Virus Scan and Removal: Starting from R500 per incident</li>
+                        <li>Data Backup and Recovery: Starting from R300 per incident</li>
+                        <li>Remote Technical Support: Starting from R200 per incident</li>
+                    </ul>
+                </div>
+
+                <!-- Computer Hardware Replacement -->
+                <div class="pricing-item">
+                    <h4>Computer Hardware Replacement</h4>
+                    <ul>
+                        <li>Component Upgrades (e.g., RAM, SSD): Starting from R500 (excludes the cost of all needed hardware)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Intermediate Services -->
+            <div class="pricing-category">
+                <h3>Intermediate Services</h3>
+
+                <!-- Email and Domain Services -->
+                <div class="pricing-item">
+                    <h4>Email and Domain Services</h4>
+                    <ul>
+                        <li>Email Account Setup: Starting from R200 per email account</li>
+                        <li>Domain Registration: Starting from R150 per year</li>
+                        <li>Domain Renewal: Starting from R150 per year</li>
+                        <li>Email Forwarding and Alias Setup: Starting from R100 per email address</li>
+                    </ul>
+                </div>
+
+                <!-- Modern Desktop Administration -->
+                <div class="pricing-item">
+                    <h4>Modern Desktop Administration</h4>
+                    <ul>
+                        <li>Operating System Installation and Setup: Starting from R800 per workstation</li>
+                        <li>System Optimization and Performance: Starting from R1,200</li>
+                        <li>Computer Servicing and Tune-up: Starting from R500 per computer</li>
+                        <li>Software Installation and Troubleshooting: Starting from R200 per software</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Advanced Services -->
+            <div class="pricing-category">
+                <h3>Advanced Services</h3>
+
+                <!-- IT Support and Security -->
+                <div class="pricing-item">
+                    <h4>IT Support and Security</h4>
+                    <ul>
+                        <li>Security Fundamentals NET: Starting from R1,000</li>
+                    </ul>
+                </div>
+
+                <!-- Computer Hardware Replacement -->
+                <div class="pricing-item">
+                    <h4>Computer Hardware Replacement</h4>
+                    <ul>
+                        <li>Full System Upgrades: Contact us for a customized quote</li>
+                        <li>Compatibility Testing and Integration: Starting from R300 per hour</li>
+                    </ul>
+                </div>
+
+                <!-- Web Design -->
+                <div class="pricing-item">
+                    <h4>Web Design</h4>
+                    <ul>
+                        <li>Basic Website Design: Starting from R5,000</li>
+                        <li>Custom Website Design: Starting from R10,000</li>
+                        <li>Web Application Development: Starting from R15,000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dark-overlay"></div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact" style="background: url('/assets/contact.jpg') center/cover; position: relative;">
+        <div class="container intro-text text-light">
+            <h2 class="text-center">Contact Us</h2>
+
+            <!-- Contact Information -->
+            <div class="contact-info text-center mb-5">
+                <p>
+                    <strong>Call:</strong> [Your Phone Number]<br>
+                    <strong>Email:</strong> [Your Email Address]<br>
+                </p>
+            </div>
+
+            <!--contact form-->
+            <!--form-control, form-label, form-select, input-group, input-group-text-->
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Get in Touch</h2>
+                    <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+                </div>
+
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-6">
+                        <form>
+                            <label for="email" class="form-label">Email Address:</label>
+                            <div class="mb-4 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com">
+                                <!--Tooltip-->
+                                <span class="input-group-text">
+                                    <span class="tt" data-bootstrap-placement="bottom" title="Enter an email address we can reply to.">
+                                        <i class="bi bi-question-circle text-muted"></i>
+                                    </span>   
+                                </span>
+                            </div>                       
+
+                            <label for="name" class="form-label">Name:</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" id="name" placeholder="e.g. Mario">
+                                <!--Tooltip-->
+                                <span class="input-group-text">
+                                    <span class="tt" data-bootstrap-placement="bottom" title="Enter your name">
+                                        <i class="bi bi-question-circle text-muted"></i>
+                                    </span>   
+                                </span>
+                            </div>                     
+
+                            <label for="subject" class="form-label">What is you question about?</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-chat-right-dots-fill"></i>
+                                </span>
+                                <select id="subject" class="form-select">
+                                    <option value="pricing" selected>Pricing query</option>
+                                    <option value="content">Content query</option>
+                                    <option value="other">Other query</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-floating mb-4 mt-5">
+                                <textarea id="query" style="height: 140px;" class="form-control"></textarea>
+                                <label for="query" class="form-label">Your query...</label>
+                            </div>
+
+                            <div class="mb-4 text-center">
+                                <button class="btn btn-secondary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location with Map -->
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <h3>Location</h3>
+                    <p>
+                        <strong>Address:</strong> 5 Dahlia Street, White City<br>
+                        <strong>Town:</strong> Saldanha<br>
+                        <strong>Province:</strong>Western Cape<br>
+                        <strong>Postal Code:</strong>7395<br>
+                        <strong>Country:</strong>South Africa
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <!-- Google Map Embed -->
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.7328639067578!2d17.93641957499041!3d-33.01081767356682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c34a5f707b853d1%3A0xa3e75e75f328cf59!2s5%20Dahlia%20St%2C%20White%20City%2C%20Saldanha%2C%207395!5e0!3m2!1sen!2sza!4v1707998467177!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3 shadow"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Social Media Links Notice -->
+        <div class="social-media-notice text-center mt-5 intro-text text-light">
+            <p>
+                <strong>Connect with us on social media:</strong><br>
+                Find our social media links at the bottom of the page.
+            </p>
+        </div>
+        <div class="dark-overlay"></div>
+    </section>
+
+    <!--reviews list-->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i> Book Reviews</h2>
+                <p class="lead">What my students have said about the book...</p>
+            </div>          
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-8">
+                <div class="list-group">
+                    <!--Review 1-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 2-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 3-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 4-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 5-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
-
-            <!-- IT Support and Security -->
-            <div class="service-item">
-                <h3>IT Support and Security</h3>
-                <ul>
-                    <li>Antivirus Software Installation: Starting from R300 per workstation</li>
-                    <li>Virus Scan and Removal: Starting from R500 per incident</li>
-                    <li>Data Backup and Recovery: Starting from R300 per incident</li>
-                    <li>Remote Technical Support: Starting from R200 per incident</li>
-                </ul>
-            </div>
-
-            <!-- Computer Hardware Replacement -->
-            <div class="service-item">
-                <h3>Computer Hardware Replacement</h3>
-                <ul>
-                    <li>Component Upgrades (e.g., RAM, SSD): Starting from R500 (excludes the cost of all needed hardware)</li>
-                    <li>Modern Desktop Administration: Starting from R500 per workstation</li>
-                </ul>
-            </div>
-
-            <!-- Microsoft Office Suite -->
-            <div class="service-item">
-                <h3>Microsoft Office Suite</h3>
-                <ul>
-                    <li>Office Suite Installation and Configuration: R500 per workstation</li>
-                    <li>Document Templates and Formatting: Starting from R1,000</li>
-                </ul>
-            </div>
-
-            <!-- Network Setup -->
-            <div class="service-item">
-                <h3>Network Setup</h3>
-                <ul>
-                    <li>Basic Network Setup and Troubleshooting: Starting from R500</li>
-                </ul>
-            </div>
-
-            <!-- Email and Domain Services -->
-            <div class="service-item">
-                <h3>Email and Domain Services</h3>
-                <ul>
-                    <li>Email Account Setup: Starting from R200 per email account</li>
-                    <li>Domain Registration: Starting from R150 per year</li>
-                    <li>Domain Renewal: Starting from R150 per year</li>
-                    <li>Email Forwarding and Alias Setup: Starting from R100 per email address</li>
-                </ul>
-            </div>
-
-            <!-- Modern Desktop Administration -->
-            <div class="service-item">
-                <h3>Modern Desktop Administration</h3>
-                <ul>
-                    <li>Operating System Installation and Setup: Starting from R800 per workstation</li>
-                    <li>System Optimization and Performance: Starting from R1,200</li>
-                </ul>
-            </div>
-
-            <!-- Software Development -->
-            <div class="service-item">
-                <h3>Software Development</h3>
-                <ul>
-                    <li>Custom Software Development: Starting from R20,000</li>
-                    <li>Web Application Development: Starting from R15,000</li>
-                    <li>Mobile App Development: Starting from R25,000</li>
-                    <li>Integration Services: Contact us for a customized quote</li>
-                </ul>
-            </div>
-
-            <!-- Microsoft Azure -->
-            <div class="service-item">
-                <h3>Microsoft Azure</h3>
-                <ul>
-                    <li>Azure Consulting and Setup: Starting from R5,000</li>
-                    <li>Azure Migration Services: Contact us for a customized quote</li>
-                    <li>Azure Resource Optimization: Starting from R3,000</li>
-                </ul>
-            </div>
-
-            <!-- Additional Services -->
-            <div class="service-item">
-                <h3>Additional Services</h3>
-                <ul>
-                    <li>Router and Switch Configuration: Starting from R800</li>
-                    <li>Wireless Access Point Setup: Starting from R600</li>
-                    <li>Network Expansion and Optimization: Contact us for a customized quote</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="text-center mb-5">About Us</h2>
-            <!-- Brief Introduction about the Company -->
-            <p>
-                MercyCore Networks is a dynamic and newly established company dedicated to delivering innovative and secure solutions tailored to meet the evolving needs of modern businesses. Founded and led by Nathan Dwashu, we bring fresh ideas and a passion for innovation to the industry.
-            </p>
-            <!-- Add your company information here -->
-            <!-- ... -->
-        </div>
-    </section>
-
-
 
     <!-- Footer Section -->
     <footer class="bg-dark text-white text-center py-4">
@@ -197,6 +496,7 @@
             <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="me-2"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="me-2"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/" target="_blank" title="WhatsApp" class="me-2"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="Linkedin" class="me-2"><i class="fab fa-linkedin"></i></a>
             <!-- Replace the URLs with your actual social media profile/page URLs -->
         </div>
     </footer>
