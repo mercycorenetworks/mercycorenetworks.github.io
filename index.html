@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <style>
     section{
-        padding: 40px 0;
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     }
 
     #intro {
@@ -31,11 +40,11 @@
   </style>
     <!-- Include FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/dbafab98d7.js" crossorigin="anonymous"></script>
-    <title>MercyCore Networks - Home</title>
+    <title>MercyCore Networks</title>
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold">
@@ -74,9 +83,8 @@
         </div>
     </nav>
 
-
    <!--main image & intro text-->
-    <section id="intro" style="background: url('/assets/Cover_Pic.jpg') center/cover; position: relative;">
+    <section id="intro" style="background: url('/assets/Cover_Pic.jpg') center/cover; position: relative; background-position: center -300px;">
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center text-md-start text-white">
@@ -300,6 +308,89 @@
         <div class="dark-overlay"></div>
     </section>
 
+    <!--reviews list-->
+    <section id="reviews" class="bg-dark
+    " style="background: url('/assets/review.jpg') center/cover; position: relative;">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i> Book Reviews</h2>
+                <p class="lead">What my students have said about the book...</p>
+            </div>                     
+        </div>
+    
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-8">
+                <div class="list-group">
+                    <!--Review 1-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 2-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 3-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 4-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                    <!--Review 5-->
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
+                        <small>Review by Mario</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="dark-overlay"></div> -->
+    </section>
+
     <!-- Contact Us Section -->
     <section class="contact" id="contact" style="background: url('/assets/contact.jpg') center/cover; position: relative;">
         <div class="container intro-text text-light">
@@ -407,106 +498,70 @@
         <div class="dark-overlay"></div>
     </section>
 
-    <!--reviews list-->
-    <section id="reviews" class="bg-light">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2><i class="bi bi-stars"></i> Book Reviews</h2>
-                <p class="lead">What my students have said about the book...</p>
-            </div>          
-        </div>
-
-        <div class="row justify-content-center my-5">
-            <div class="col-lg-8">
-                <div class="list-group">
-                    <!--Review 1-->
-                    <div class="list-group-item py-3">
-                        <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
-                        <small>Review by Mario</small>
-                    </div>
-                    <!--Review 2-->
-                    <div class="list-group-item py-3">
-                        <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
-                        <small>Review by Mario</small>
-                    </div>
-                    <!--Review 3-->
-                    <div class="list-group-item py-3">
-                        <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
-                        <small>Review by Mario</small>
-                    </div>
-                    <!--Review 4-->
-                    <div class="list-group-item py-3">
-                        <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
-                        <small>Review by Mario</small>
-                    </div>
-                    <!--Review 5-->
-                    <div class="list-group-item py-3">
-                        <div class="pb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                        <h5 class="mb-1">A must buy for every aspiring web dev</h5>
-                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur maxime nisi perferendis sed illum itaque, temporibus sint magni provident eveniet nostrum iure molestias magnam dolore odit vitae voluptatum perspiciatis!</p>
-                        <small>Review by Mario</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer Section -->
     <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2023 MercyCore Networks. All rights reserved.</p>
+
         <!-- Social Media Links -->
         <div class="social-media">
             <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="me-2"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="me-2"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/" target="_blank" title="WhatsApp" class="me-2"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://linkedin.com/" target="_blank" title="Linkedin" class="me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn" class="me-2"><i class="fab fa-linkedin"></i></a>
             <!-- Replace the URLs with your actual social media profile/page URLs -->
+        </div>
+
+        <!-- Button to Open Modal -->
+        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#creditsModal">
+            View Credits
+        </button>
+
+        <!-- Modal for Credits or Acknowledgements Section -->
+        <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="creditsModalLabel">Credits</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        <h4>Website Design:</h4>
+                        <p>MercyCore Networks</p>
+                    
+                        <div class="text-start"> <!-- Add this div with text-start class -->
+                            <h4>Images:</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://www.freepik.com/free-ai-image/young-adult-smiling-with-hands-free-device-generated-by-ai_42596661.htm#query=contact&position=2&from_view=search&track=ais_ai_generated&uuid=10418fb5-c05a-4cba-85af-a9d648476930">Image by vecstock on Freepik</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.freepik.com/free-ai-image/young-woman-studying-desk-with-creativity-generated-by-ai_41572684.htm#query=review&position=43&from_view=search&track=ais_ai_generated&uuid=405e9bc5-94a1-4146-9f02-b072c123cb0c">Image by vecstock on Freepik</a>
+                                </li>
+                                <!-- Add other image credits as needed -->
+                            </ul>
+                        </div>
+                        <!-- Add other credits as needed -->
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script>
+
+    <script>
     const tooltips = document.querySelectorAll('.tt')
     tooltips.foreach(t => {
         new bootstrap.tooltip(t)
     })
-  </script>
+    </script>
+
+    <script type="module">
+        import { Toast } from 'bootstrap.esm.min.js'
+    
+        Array.from(document.querySelectorAll('.toast'))
+        .forEach(toastNode => new Toast(toastNode))
+    </script>
 </body>
 </html>
